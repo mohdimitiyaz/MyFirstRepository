@@ -1,0 +1,229 @@
+{
+    "transactionNumber": "231267143-File3",
+    "memberId": "8691036705731",
+    "storeNumber": "177",
+    "terminalNumber": "11",
+    "tender": [],
+    "items": [
+        {
+            "itemCode": "0004740065904",
+            "entryId": 1,
+            "department": 321321,
+            "unitPrice": 11.99,
+            "extendedPrice": 35.97,
+            "clubCardSaving": 0,
+            "quantityType": "EA",
+            "quantityValue": 3,
+            "discountAllowed": true,
+            "pointsApplyItem": true,
+            "departmentGroupNumber": 12323,
+            "wic": false,
+            "externalSavings": [
+                {
+                    "extendedPrice": 1.0,
+                    "quantityType": "0",
+                    "quantityValue": 1.0,
+                    "adjustmentType": 1,
+                    "promotionCode": 12312
+                }
+            ],
+            "linkPluNumber": "",
+            "itemPluNumber": "",
+            "startDate": 1601318895807,
+            "endDate": 1601405295807
+        },
+        {
+            "itemCode": "0004740065905",
+            "entryId": 1,
+            "department": 321321,
+            "unitPrice": 6.99,
+            "extendedPrice": 6.99,
+            "clubCardSaving": 0,
+            "quantityType": "EA",
+            "quantityValue": 1,
+            "discountAllowed": true,
+            "pointsApplyItem": true,
+            "departmentGroupNumber": 12323,
+            "wic": false,
+            "externalSavings": [
+                {
+                    "extendedPrice": 1.0,
+                    "quantityType": "0",
+                    "quantityValue": 1.0,
+                    "adjustmentType": 1,
+                    "promotionCode": 12312
+                }
+            ],
+            "linkPluNumber": "",
+            "itemPluNumber": "",
+            "startDate": 1601318895807,
+            "endDate": 1601405295807
+        }
+    ],
+    "usages": [],
+    "offers": [
+        {
+            "source": "CPE",
+            "offerId": "13649187",
+            "offerExternalId": "1798424684-ND",
+            "linkPLUNumber": 0,
+            "category": "001-Club Card Savings",
+            "offerStartDate": 1738434600000,
+            "offerEndDate": 1738434600000,
+            "offerDescription": " ",
+            "offerName": "SC SO IS GM MAY21 BOGO 50  1798424684-ND",
+            "offerPriority": "Medium",
+            "offerTestingStartDate": 1738434600000,
+            "offerTestingEndDate": 1738434600000,
+            "deferEndOfSaleIndicator": false,
+            "offerLimit": {
+                "code": "No Limit",
+                "limit": 0,
+                "periodType": "",
+                "periodQuantity": 0
+            },
+            "benefit": {
+                "discount": {
+                    "discountLevel": "Item Level",
+                    "discountProducts": [
+                        {
+                            "allowNegative": false,
+                            "couponFactor": 0.000000,
+                            "discountType": "Fixed Amount Off",
+                            "excGroupName": "",
+                            "flexNegative": true,
+                            "productGroupName": "SOU GM MAY 2021 BOGO 50",
+                            "tiers": [
+                                {
+                                    "discountValue": 5.000000,
+                                    "dollarLimit": 0.000000,
+                                    "itemLimit": 1,
+                                    "receiptText": "GM MAY21 BOGO 50 ",
+                                    "weightLimit": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "specialPricing": [
+                        {
+                            "amount": 0.000000,
+                            "seqNumber": 0
+                        }
+                    ],
+                    "scoreCard": {
+                        "enabled": false,
+                        "lineText": "",
+                        "name": ""
+                    }
+                },
+                "pointsProgram": [
+                    {
+                        "pointsGroupName": "",
+                        "pointsLimit": 0,
+                        "tiers": [
+                            {
+                                "tierPointNbr": 0
+                            }
+                        ],
+                        "scoreCard": {
+                            "enabled": false,
+                            "lineText": "",
+                            "name": ""
+                        }
+                    }
+                ],
+                "printedMessage": {}
+            },
+            "conditions": {
+                "conditionJoinOperator": "AND",
+                "customerCondition": {
+                    "exclude": [],
+                    "include": [
+                        {
+                            "customerGroupNm": "Any Cardholder"
+                        }
+                    ]
+                },
+                "dayCondition": {
+                    "sunday": false,
+                    "monday": false,
+                    "tuesday": false,
+                    "wednesday": false,
+                    "thursday": false,
+                    "friday": false,
+                    "saturday": false
+                },
+                "pointsProgram": {
+                    "pointsGroupName": "",
+                    "tiers": [
+                        {
+                            "pointQty": 0
+                        }
+                    ]
+                },
+                "productConditions": [
+                    {
+                        "productGroupName": "SOU GM MAY 2021 BOGO 51",
+                        "excGroupName": "",
+                        "minProductQuantity": 0,
+                        "minPurchaseAmount": 0.000000,
+                        "productConditionOperator": "",
+                        "productConditionType": "Dollars",
+                        "tiers": [
+                            {
+                                "productAmt": 20
+                            }
+                        ],
+                        "uniqueProductCondition": false
+                    }
+                ],
+                "timeConditions": [
+                    {
+                        "endTm": "",
+                        "startTm": ""
+                    }
+                ],
+                "triggerConditions": [
+                    ""
+                ]
+            },
+            "programCode": "SC"
+        }
+    ],
+    "lookUps": [
+        {
+            "id": "00004740065904",
+            "type": "UPC",
+            "condition": "SOU GM MAY 2021 BOGO 51",
+            "benefit": "NA",
+            "offerId": "13649187",
+            "indicator": "INCL"
+        },
+        {
+            "id": "00004740065904",
+            "type": "UPC",
+            "condition": "NA",
+            "benefit": "SOU GM MAY 2021 BOGO 50",
+            "offerId": "13649187",
+            "indicator": "INCL"
+        },
+        {
+            "id": "00004740065904",
+            "type": "UPC",
+            "condition": "NA",
+            "benefit": "SOU GM MAY 2021 BOGO 50",
+            "offerId": "13649187",
+            "indicator": "INCL"
+        },
+        {
+            "id": "00004740065904",
+            "type": "UPC",
+            "condition": "NA",
+            "benefit": "SOU GM MAY 2021 BOGO 50",
+            "offerId": "13649187",
+            "indicator": "INCL"
+        }
+    ],
+    "points": [],
+    "rewardScoreCards": []
+}
