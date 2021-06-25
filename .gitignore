@@ -1,9 +1,4 @@
-.idea
-.idea/
 /.idea
-out
-/JavaPractice.iml
-/target
-target
-/target/
-lib
+.idea/MyFirstRepository.iml
+#.gitignore
+
