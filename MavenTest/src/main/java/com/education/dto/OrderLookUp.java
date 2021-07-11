@@ -10,4 +10,6 @@ public class OrderLookUp {
     private String benefit;
     private Integer offerId;
     private String indicator;
+//Raziuddin New Added Variables
+private String name;
 }
