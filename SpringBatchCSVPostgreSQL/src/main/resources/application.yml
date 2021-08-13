@@ -1,0 +1,10 @@
+#spring:
+ # datasource:
+  #  url: jdbc:postgresql://localhost:5432/testcsvdb
+   # username: postgres
+    #password: 123
+    #platform: postgresql
+    #enabled:  false
+
+#server:
+  #port: 8081
