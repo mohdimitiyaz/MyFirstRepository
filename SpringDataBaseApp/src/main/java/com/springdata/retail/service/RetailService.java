@@ -1,28 +1,32 @@
 package com.springdata.retail.service;
 
-//import com.it.basepackage.springdata.dao.Item_Product_Group;
-//import com.it.basepackage.springdata.dao.Offer_MetaData;
-//import com.it.basepackage.springdata.dao.Offer_Product_Group;
-import com.springdata.retail.dao.Item_Product_Group;
+//import com.it.basepackage.springdata.dao.ItemProductGroup;
+//import com.it.basepackage.springdata.dao.OfferMetaData;
+//import com.it.basepackage.springdata.dao.OfferProductGroup;
+import com.springdata.retail.models.ItemProductGroup;
 //import com.springdata.retail.dao.JoinTables;
-import com.springdata.retail.dto.ItemProductGroupRepository;
+import com.springdata.retail.models.OfferMetaData;
+import com.springdata.retail.repositories.ItemProductGroupRepository;
 //import com.springdata.retail.dto.JoinRepository;
-import com.springdata.retail.dto.OfferMetaDataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Component
 @Service
 public  class RetailService {
 
     @Autowired
     ItemProductGroupRepository itemProductGroupRepository;
+    @Autowired
+    OfferMetaData offerMetaData;
 
 
-    public List<Item_Product_Group> innerJoinData() {
-        return itemProductGroupRepository.findByOfferId("100");
+    public Optional<ItemProductGroup> getItems(String offerId) {
+        Optional<ItemProductGroup> itemProductGroups = itemProductGroupRepository.findById(offerId);
+        return itemProductGroups;
     }
 }

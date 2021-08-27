@@ -1,20 +1,15 @@
-package com.springdata.retail.dao;
+package com.springdata.retail.models;
 //package com.springdata.retail.dao;
 
-import com.springdata.retail.dao.Offer_MetaData;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
-import java.awt.print.Book;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 
 @Data
@@ -22,7 +17,7 @@ import java.util.Set;
 @Table(name = "offer_product_group")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Offer_Product_Group implements Serializable {
+public class OfferProductGroup implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id//(name = "transactionnumber")
@@ -49,19 +44,9 @@ public class Offer_Product_Group implements Serializable {
     private Date createdDate;
     @Column(name = "lastupdateddate")
     private Date lastUpDatedDate;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "item_product_group", orphanRemoval = true)
-    private List<Item_Product_Group> item_product_groups = new ArrayList<>();
-    //@OneToMany(fetch = FetchType.LAZY)
-   // @Column(name = "offerId")
-    private Offer_Product_Group offer_product_group;
 
-    /*@OneToMany
-    private List<Item_Product_Group> item_product_groups;*/
-
-    /*@ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "offerId", insertable = false, updatable = false)
-    @Fetch(FetchMode.JOIN)
-    private Offer_MetaData offer_metaData;*/
-
+    @OneToOne(cascade = CascadeType.ALL,fetch=FetchType.LAZY)
+    @JoinColumn(name="productgroupid")
+    private OfferProductGroup offerProductGroup;
 
 }
